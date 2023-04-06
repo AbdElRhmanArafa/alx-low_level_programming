@@ -11,11 +11,9 @@ int actual_sqrt_recursion(int n, int guess)
 {
 	if (n  == guess * guess)
 		return (guess);
-	if (guess == (n - 1))
+	if (guess > (n - 1))
 		return (-1);
-	int newGuess =  (guess + n / guess) / 2;
-
-	return (actual_sqrt_recursion(n, newGuess));
+	return (actual_sqrt_recursion(n, (guess + 1)));
 }
 /**
  * _sqrt_recursion - returns the natural square root of a number
@@ -27,5 +25,5 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	actual_sqrt_recursion(n, 1);
+	return (actual_sqrt_recursion(n, 1));
 }
