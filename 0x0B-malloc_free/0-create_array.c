@@ -16,13 +16,9 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return (0);
 	ptr = (char *)malloc(size * sizeof(char));
-	int i = 0;
-	while (i < size)
-	{
-		*(ptr + i) = c;
-		i++;
-	}
-
-	*(ptr + i) = '\0';
+	if (ptr == NULL)
+		return (0);
+	memset(ptr, c, size);
+	*(ptr + size) = '\0';
 	return (ptr);
 }
