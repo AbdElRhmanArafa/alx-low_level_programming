@@ -1,0 +1,8 @@
+# ignore emacs file 
+*~
+# ignore Repeated file that generated in echa dir and  test funcation 
+main.c
+_putchar.c
+*main.c
+# Ignore executable files
+!*/
