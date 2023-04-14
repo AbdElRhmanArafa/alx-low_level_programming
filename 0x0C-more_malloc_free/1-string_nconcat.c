@@ -12,10 +12,10 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int lenS1 = 0, lenS2 = 0, i, Max;
+	int lenS1 = 0, lenS2 = 0, i, Max, j = 0;
 	char *ptr;
 
-	if (*s1 == "" || *s2 == "")
+	if (s1 == NULL || s2 == NULL)
 		return (NULL);
 	while (s1[lenS1] != '\0')
 	{
@@ -25,15 +25,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		lenS2++;
 	}
-	if (n > lenS2)
+	if ((int)n > lenS2)
 		n = lenS2;
 	Max = (lenS1 + n);
 	ptr = malloc(sizeof(char) * Max + 1);
 	if (ptr == NULL)
 		return (NULL);
-	int j = 0;
 
-	for (i = 0; i < Max; i++)
+	for (i = 0; i <= Max; i++)
 	{
 		if (i < lenS1)
 			ptr[i] = s1[i];
