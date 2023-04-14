@@ -17,26 +17,34 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	int coins[] = {25,
-				   10,
-				   5,
-				   2,
-				   1};
-	int cents, count = 0, i;
+	int cents, coins = 0;
 
 	cents = atoi(argv[1]);
 	while (cents > 0)
 	{
-		for (i = 0; i < 5; i++)
+		coins++;
+		if ((cents - 25) >= 0)
 		{
-			if (cents >= coins[i])
-			{
-				cents -= coins[i];
-				count++;
-				break;
-			}
+			cents -= 25;
+			continue;
 		}
+		if ((cents - 10) >= 0)
+		{
+			cents -= 10;
+			continue;
+		}
+		if ((cents - 5) >= 0)
+		{
+			cents -= 5;
+			continue;
+		}
+		if ((cents - 2) >= 0)
+		{
+			cents -= 2;
+			continue;
+		}
+		cents--;
 	}
-	printf("%d\n", count);
+	printf("%d\n", coins);
 	return (0);
 }
