@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 		return (1);
 	}
-	mul = ((int)argv[1] * (int)argv[2]);
+	mul = (atoi(argv[1]) * atoi(argv[2]));
 	printf("%d\n", mul);
 	return (0);
 }
