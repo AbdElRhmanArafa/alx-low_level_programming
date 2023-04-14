@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints  all program arg 
+ * main - prints  all program arg
  *@argc: number of argument
  *@argv: array of argument
  *Return: 0
