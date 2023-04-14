@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
 	int mul;
 
-	if (argc <= 0)
+	if (argc <= 2)
 	{
 		printf("%s\n", "Error");
 		return (1);
