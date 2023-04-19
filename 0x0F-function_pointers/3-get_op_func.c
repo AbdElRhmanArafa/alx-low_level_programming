@@ -1,9 +1,12 @@
 #include "3-calc.h"
+#include <stdlib.h>
+#include <string.h>
+
 /**
- * get_op_func - select to operator
- * @s:  operator
+ * get_op_func - ...
+ * @s: ...
  *
- * Return: point to function
+ * Return: ...
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -18,8 +21,10 @@ int (*get_op_func(char *s))(int, int)
 
 	while (i < 5)
 	{
-		if (s && s[0] == ops[i].op[0] && !s[1])
+		if (strcmp(s, ops[i].op) == 0)
 			return (ops[i].f);
+		i++;
 	}
+
 	return (0);
 }
