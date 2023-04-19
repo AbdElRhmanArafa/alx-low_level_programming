@@ -19,6 +19,6 @@ int main(int argc, char *argv[])
 	if (b < 0)
 		printf("Error\n"), exit(2);
 	while (b--)
-		printf("%02hh%s", *ptrFun++, b ? " " : "\n");
+		printf("%02hhx%s", *ptrFun++, b ? " " : "\n");
 	return (0);
 }
