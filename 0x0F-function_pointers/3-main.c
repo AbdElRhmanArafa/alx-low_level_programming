@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int (*op_all)(int a, int b);
+	int (*op_all)(int, int);
 	int a, b;
 
 	if (argc != 4)

@@ -1,43 +1,49 @@
 #include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>
+
 /**
- * op_add - add two number
- * @a: number
- * @b: number
+ * op_add - ...
+ * @a: ...
+ * @b: ...
  *
- * Return: sum of a + b
+ * Return: ...
  */
 int op_add(int a, int b)
 {
 	return (a + b);
 }
+
 /**
- * op_sub - sub two number
- * @a: number
- * @b: nymber
+ * op_sub - ...
+ * @a: ...
+ * @b: ...
  *
- * Return: sub(a - b)
+ * Return: ...
  */
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
+
 /**
- * op_mul - mul two number
- * @a: number
- * @b: number
+ * op_mul - ...
+ * @a: ...
+ * @b: ...
  *
- * Return: mul (a * b)
+ *  Return: ...
  */
 int op_mul(int a, int b)
 {
 	return (a * b);
 }
+
 /**
- * op_div - div two number
- * @a: number
- * @b: number
+ * op_div - ...
+ * @a: ...
+ * @b: ...
  *
- * Return: div(a / b)
+ *  Return: ...
  */
 int op_div(int a, int b)
 {
@@ -46,14 +52,16 @@ int op_div(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
+
 	return (a / b);
 }
+
 /**
- * op_mod - reminder of two number
- * @a: number
- * @b: number
+ * op_mod - ...
+ * @a: ...
+ * @b: ...
  *
- * Return: mod a % b
+ * Return: ...
  */
 int op_mod(int a, int b)
 {
@@ -62,5 +70,6 @@ int op_mod(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
+
 	return (a % b);
 }
