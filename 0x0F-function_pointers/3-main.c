@@ -16,5 +16,11 @@ int main(int argc, char *argv[])
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 	op_all = get_op_func(argv[2]);
-	printf("%d\n", op_all(a,b));
+	if (op_all)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	printf("%d\n", op_all(a, b));
+	return (0);
 }

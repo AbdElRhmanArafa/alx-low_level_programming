@@ -21,7 +21,5 @@ int (*get_op_func(char *s))(int, int)
 		if (s && s[0] == ops[i].op[0] && !s[1])
 			return (ops[i].f);
 	}
-	printf("Error\n");
-	exit(99);
-	return (NULL);
+	return (0);
 }
