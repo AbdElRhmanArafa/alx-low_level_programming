@@ -7,3 +7,4 @@ _putchar.c
 # Ignore executable files
 !2-main.c
 !3-main.c
+a.out
