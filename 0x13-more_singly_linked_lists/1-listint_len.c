@@ -6,14 +6,22 @@
  *
  * Return: number of nodes
  */
-size_t listint_len(const listint_t *h)
+void free_listint2(listint_t **head)
 {
-	unsigned int count = 0;
+	/* If the head pointer is NULL, return immediately */
+	if (head == NULL || *head == NULL)
+		return;
 
-	while (h)
+	/* Loop through the list and free each node */
+	while (*head != NULL)
 	{
-		count++;
-		h = h->next;
+		listint_t *temp = (*head)->next; /* Save next node pointer */
+
+		free(*head); /* Free the current node */
+
+		*head = temp; /* Move to the next node */
 	}
-	return (count);
+
+	/* Set the head pointer to NULL */
+	*head = NULL;
 }
