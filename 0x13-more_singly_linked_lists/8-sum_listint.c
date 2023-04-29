@@ -7,7 +7,7 @@
  */
 int sum_listint(listint_t *head)
 {
-	unsigned sum = 0;
+	unsigned int sum = 0;
 	listint_t *tmplist = head;
 
 	while (tmplist)
