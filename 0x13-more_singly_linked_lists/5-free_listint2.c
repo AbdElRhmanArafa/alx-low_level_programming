@@ -6,15 +6,20 @@
  */
 void free_listint2(listint_t **head)
 {
-	listint_t *Temp = *head;
-
-	if (head == NULL)
+	/* If the head pointer is NULL, return immediately */
+	if (head == NULL || *head == NULL)
 		return;
+
+	/* Loop through the list and free each node */
 	while (*head)
 	{
-		Temp = (*head)->next;
-		free(*head);
-		*head = Temp;
+		listint_t *temp = (*head)->next; /* Save next node pointer */
+
+		free(*head); /* Free the current node */
+
+		*head = temp; /* Move to the next node */
 	}
+
+	/* Set the head pointer to NULL */
 	*head = NULL;
 }
