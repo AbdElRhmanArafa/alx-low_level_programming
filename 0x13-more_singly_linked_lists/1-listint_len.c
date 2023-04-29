@@ -8,7 +8,7 @@
  */
 size_t listint_len(const listint_t *h)
 {
-	unsigned int count = 0 ;
+	unsigned int count = 0;
 
 	while (h)
 	{
@@ -16,5 +16,4 @@ size_t listint_len(const listint_t *h)
 		h = h->next;
 	}
 	return (count);
-	
 }
