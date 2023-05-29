@@ -10,5 +10,5 @@ _putchar.c
 a.out
 crackme3
 # ignore old
-0x14-bit_manipulation
-0x15-file_io
+0x14-bit_manipulation/
+0x15-file_io/
