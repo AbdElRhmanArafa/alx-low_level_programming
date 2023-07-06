@@ -11,3 +11,5 @@ a.out
 crackme3
 # ignore old
 test/
+# ignore gitignore 
+.gitignore
