@@ -17,3 +17,4 @@ test/
 # Ignore specific files in /0x17-doubly_linked_lists/
 0x17-doubly_linked_lists/main.c
 0x17-doubly_linked_lists/lists.h
+.vscode/settings.json
