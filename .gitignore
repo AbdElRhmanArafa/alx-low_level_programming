@@ -11,5 +11,9 @@ a.out
 crackme3
 # ignore old
 test/
-# ignore gitignore 
+# Ignore Gitignore itself
 .gitignore
+
+# Ignore specific files in /0x17-doubly_linked_lists/
+0x17-doubly_linked_lists/main.c
+0x17-doubly_linked_lists/lists.h
